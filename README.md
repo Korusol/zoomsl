@@ -10,7 +10,7 @@
 
 Поддерживаемые браузеры - FF2+ IE8+ Opr9+ Chr1+ Saf2+
 
-Для работы 3 версии плагина требуется версия jquery ниже 3.
+Для стабильной работы плагина рекомендуется использовать jQuery 3 версии.
 
 ---
 Автор: Сергей Зарагулов
@@ -31,8 +31,7 @@
     <img class="my-foto" src="/images/image2-small.jpg"  data-large="/images/image2-big.jpg" title="Фото2">
     <img class="my-foto" src="/images/image3-small.jpg"  data-large="/images/image3-big.jpg" title="Фото3">
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js></script>
     <script src="zoomsl.js"></script>
 
     <script>

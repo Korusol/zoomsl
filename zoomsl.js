@@ -9,7 +9,7 @@
             if (!$(this).is("img")) return true;
             var that = this;
             setTimeout(function () {
-                $(new Image()).load(function () {
+                $(new Image()).on('load', function () {
                     sergelandimagezoomer.init($(that), options);
                 }).attr('src', $(that).attr('src'));
             }, 30);
@@ -365,7 +365,7 @@
                 $textdn;
 
             if (img.h === 0 || img.w === 0) {
-                $(new Image()).load(function () {
+                $(new Image()).on('load', function () {
                     self.init($img, options);
                 }).attr("src", $img.attr("src"));
                 return;
@@ -760,7 +760,7 @@
 
                 if (setting.largeimage !== $tracker.data('largeimage')) {
 
-                    $(new Image()).load(function () {}).attr("src", setting.largeimage);
+                    $(new Image()).on('load', function () {}).attr("src", setting.largeimage);
 
                     $($tracker).unbind();
                     $($statusdiv).remove();
@@ -783,7 +783,7 @@
                 setting.largeimage = $img.attr("data-large") || $img.attr("src");
                 if (setting.largeimage !== $tracker.data("largeimage")) {
 
-                    $(new Image()).load(function () {}).attr("src", setting.largeimage);
+                    $(new Image()).on('load', function () {}).attr("src", setting.largeimage);
 
                     $($tracker).unbind();
                     $($statusdiv).remove();
